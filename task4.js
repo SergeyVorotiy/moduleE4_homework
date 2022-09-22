@@ -50,3 +50,12 @@ for (let key in myLamp){
 for (let key in myTV){
     console.log(`${key} - ${myTV[`${key}`]}`)
 }
+
+let allPower = 0;
+if (myTV.isOn){
+    allPower += myTV.power;
+}
+if (myLamp.isOn){
+    allPower += myLamp.power;
+}
+console.log(`al power is - ${allPower}`);
